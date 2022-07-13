@@ -7,6 +7,6 @@ aux_source_directory(fm FM)
 AUX_SOURCE_DIRECTORY(mt  MT)
 
 include_directories(fm mt)
-add_compile_options(-g)
+#add_compile_options(-g)
 
 add_executable(mt_and_fm main.c ${FM} ${MT} )
