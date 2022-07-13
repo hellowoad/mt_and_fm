@@ -128,7 +128,7 @@ struct state;
  * - A guarded transition executing an action
  * ~~~{.c}
  * {
- *    .eventType = Event_keyboard,
+ *    .eventType = Event_Time,
  *    .condition = NULL,
  *    .guard = &ensureNumericInput,
  *    .action = &addToBuffer,
@@ -232,7 +232,7 @@ struct transition
  *    .parentState = &groupState,
  *    .entryState = NULL,
  *    .transition = (struct transition[]){
- *       { Event_keyboard, (void *)(intptr_t)'\n', &compareKeyboardChar,
+ *       { Event_Time, (void *)(intptr_t)'\n', &compareKeyboardChar,
  *          NULL, &msgReceivedState },
  *    },
  *    .numTransitions = 1,
