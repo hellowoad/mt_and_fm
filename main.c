@@ -24,14 +24,14 @@ void exampleTimer1Callback(MultiTimer *timer, void *userData) {
 }
 
 void exampleTimer3Callback(MultiTimer *timer, void *userData) {
-    printf("[%012ld] fm.\n", PlatformTicksGetFunc());
+//    printf("[%012ld] fm.\n", PlatformTicksGetFunc());
 
 
     stateM_handleEvent(&vol_sample_sm,
-                       &(struct event) {Event_Time, (void *) userData}
+                       &(struct event) {Event_Time, (void *) PlatformTicksGetFunc()}
     );
 
-    MultiTimerStart(timer, 1, exampleTimer3Callback, userData);
+    MultiTimerStart(timer, 1, exampleTimer3Callback, NULL);
 }
 
 
@@ -48,10 +48,20 @@ static struct state vol_sample, select_channel, start_convert, get_ad, print_val
  * all the children states. */
 
 
-static void goto_select_channel(void *stateData, struct event *event) {
-    printf("switch channel ok\n");
-}
 
+static state_machine_running = 0;
+static is_sm_run(void *condition, struct event *event){
+    if(!state_machine_running){
+        return true;
+    }else{
+        return false;
+    }
+}
+static void goto_select_channel(void *stateData, struct event *event) {
+    printf("[%012ld] fm.\n", PlatformTicksGetFunc());
+    printf("start state machine\n");
+    state_machine_running = 1;
+}
 static struct state vol_sample = {
         .parentState = NULL,
         /* The entry state is defined in order to demontrate that the 'reset'
@@ -60,7 +70,7 @@ static struct state vol_sample = {
          * state): */
         .entryState = &select_channel,
         .transitions = (struct transition[]) {
-                {Event_Time, NULL, NULL, &goto_select_channel, &select_channel,},
+                {Event_Time, NULL, is_sm_run, &goto_select_channel, &select_channel,},
         },
         .numTransitions = 1,
         .data = 0,
@@ -70,22 +80,24 @@ static struct state vol_sample = {
 };
 
 
-static uint64_t pre_sc_time;
 
+
+
+static uint64_t pre_sc_time;
 static bool is_switch_ok(void *condition, struct event *event) {
     if (event->type != Event_Time) {
         return false;
     }
     return (event->data - (uint64_t) condition) > pre_sc_time;
 }
-
 static void select_channel_start(void *stateData, struct event *event) {
-    printf("select channel\n");
+    printf("[%012ld] fm.\n", PlatformTicksGetFunc());
+    printf("select channel=================================\n");
     pre_sc_time = event->data;
 }
-
 static void select_channel_end(void *stateData, struct event *event) {
-    printf("switch channel ok\n");
+    printf("[%012ld] fm.\n", PlatformTicksGetFunc());
+    printf("switch channel ok==================================\n");
 }
 
 static struct state select_channel = {
@@ -113,12 +125,14 @@ static bool is_cvt_sat(void *condition, struct event *event) {
 }
 
 static void convert_start(void *stateData, struct event *event) {
-    printf("start convert\n");
+    printf("[%012ld] fm.\n", PlatformTicksGetFunc());
+    printf("start convert==========================================\n");
     pre_cvt_time = event->data;
 }
 
 static void convert_end(void *stateData, struct event *event) {
-    printf("convert ok\n");
+    printf("[%012ld] fm.\n", PlatformTicksGetFunc());
+    printf("convert ok==============================================\n");
 }
 
 static struct state start_convert = {
@@ -131,16 +145,18 @@ static struct state start_convert = {
         .numTransitions = 1,
         .data = NULL,
         .entryAction = &convert_start,
-        .exitAction = &convert_start,
+        .exitAction = &convert_end,
 };
 
 
 static void get_ad_start(void *stateData, struct event *event) {
-    printf("start get ad\n");
+    printf("[%012ld] fm.\n", PlatformTicksGetFunc());
+    printf("start get ad====================================================\n");
 }
 
 static void get_ad_end(void *stateData, struct event *event) {
-    printf("get ad ok\n");
+    printf("[%012ld] fm.\n", PlatformTicksGetFunc());
+    printf("get ad ok=====================================================\n");
 }
 
 static struct state get_ad = {
@@ -158,11 +174,13 @@ static struct state get_ad = {
 
 
 static void print_value_start(void *stateData, struct event *event) {
-    printf("print ad start\n");
+    printf("[%012ld] fm.\n", PlatformTicksGetFunc());
+    printf("print ad start===============================================\n");
 }
 
 static void print_value_end(void *stateData, struct event *event) {
-    printf("print ad ok\n");
+    printf("[%012ld] fm.\n", PlatformTicksGetFunc());
+    printf("print ad ok==================================\n");
 }
 
 static struct state print_value = {
@@ -180,6 +198,7 @@ static struct state print_value = {
 
 
 static void printErrMsg(void *stateData, struct event *event) {
+    printf("[%012ld] fm.\n", PlatformTicksGetFunc());
     printf("in the err state\n");
 }
 
@@ -189,12 +208,14 @@ static struct state errorState = {
 
 int main() {
 
-    stateM_init(&vol_sample_sm, &select_channel, &errorState);
+    stateM_init(&vol_sample_sm, &vol_sample, &errorState);
 
     MultiTimerInstall(PlatformTicksGetFunc);
 
-    MultiTimerStart(&timer1, 1000, exampleTimer1Callback, "hello world");
+
     MultiTimerStart(&timer3, 1, exampleTimer3Callback, PlatformTicksGetFunc());
+    MultiTimerStart(&timer1, 1000, exampleTimer1Callback, "hello world");
+
 
 
     while (1) {
