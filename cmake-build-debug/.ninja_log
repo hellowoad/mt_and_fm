@@ -1,0 +1,6 @@
+# ninja log v5
+0	29	1657643432205756597	CMakeFiles/mt_and_fm.dir/fm/stateMachine.c.o	e5867554a8f44503
+0	31	1657643432208463734	CMakeFiles/mt_and_fm.dir/mt/unix_tick.c.o	33b014c0e25f41a4
+0	33	1657643432209800281	CMakeFiles/mt_and_fm.dir/mt/MultiTimer.c.o	f946c4e5f7102af0
+0	34	1657643432211375830	CMakeFiles/mt_and_fm.dir/main.c.o	af8df4b65636295b
+34	68	1657643432245328145	mt_and_fm	c89e77abad154649
