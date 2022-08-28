@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="mt_and_fm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\fm\;CMake Files\mt\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mt_and_fm">
+				<Option output="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt_and_fm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hewo/CLionProjects/mt_and_fm/fm"/>
+					<Add directory="/Users/hewo/CLionProjects/mt_and_fm/mt"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 mt_and_fm"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mt_and_fm/fast">
+				<Option output="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt_and_fm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hewo/CLionProjects/mt_and_fm/fm"/>
+					<Add directory="/Users/hewo/CLionProjects/mt_and_fm/mt"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 mt_and_fm/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_fm">
+				<Option output="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/test_fm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hewo/CLionProjects/mt_and_fm/fm"/>
+					<Add directory="/Users/hewo/CLionProjects/mt_and_fm/mt"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/Makefile&quot;  VERBOSE=1 test_fm"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_fm/fast">
+				<Option output="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/test_fm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hewo/CLionProjects/mt_and_fm/fm"/>
+					<Add directory="/Users/hewo/CLionProjects/mt_and_fm/mt"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/Makefile&quot;  VERBOSE=1 test_fm/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_mt">
+				<Option output="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/test_mt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hewo/CLionProjects/mt_and_fm/fm"/>
+					<Add directory="/Users/hewo/CLionProjects/mt_and_fm/mt"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/Makefile&quot;  VERBOSE=1 test_mt"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_mt/fast">
+				<Option output="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/test_mt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hewo/CLionProjects/mt_and_fm/fm"/>
+					<Add directory="/Users/hewo/CLionProjects/mt_and_fm/mt"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/Makefile&quot;  VERBOSE=1 test_mt/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/fm/stateMachine.c">
+			<Option target="mt_and_fm"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/fm/stateMachine.h">
+			<Option target="mt_and_fm"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/fm/test_fm.c">
+			<Option target="mt_and_fm"/>
+			<Option target="test_fm"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/main.c">
+			<Option target="mt_and_fm"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/mt/MultiTimer.c">
+			<Option target="mt_and_fm"/>
+			<Option target="test_mt"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/mt/MultiTimer.h">
+			<Option target="mt_and_fm"/>
+			<Option target="test_mt"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/mt/delay.c">
+			<Option target="mt_and_fm"/>
+			<Option target="test_mt"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/mt/delay.h">
+			<Option target="test_mt"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/mt/test_mt.c">
+			<Option target="mt_and_fm"/>
+			<Option target="test_mt"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/mt/test_mt.h">
+			<Option target="mt_and_fm"/>
+			<Option target="test_mt"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/mt/unix_tick.c">
+			<Option target="mt_and_fm"/>
+			<Option target="test_mt"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/mt/unix_tick.h">
+			<Option target="mt_and_fm"/>
+			<Option target="test_mt"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/fm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\fm\"/>
+		</Unit>
+		<Unit filename="/Users/hewo/CLionProjects/mt_and_fm/mt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\mt\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

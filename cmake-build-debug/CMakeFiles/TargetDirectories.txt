@@ -1,0 +1,9 @@
+/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/CMakeFiles/mt_and_fm.dir
+/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/CMakeFiles/test_fm.dir
+/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/CMakeFiles/edit_cache.dir
+/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/fm/CMakeFiles/rebuild_cache.dir
+/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/CMakeFiles/test_mt.dir
+/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/CMakeFiles/edit_cache.dir
+/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug/mt/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,113 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "fm",
+					"jsonFile" : "directory-fm-Debug-4949b109f6c32f1db042.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "fm",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "mt",
+					"jsonFile" : "directory-mt-Debug-7710aa0ed0e967e21926.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "mt",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "mt_and_fm",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mt_and_fm::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mt_and_fm-Debug-ae42498ff89e89fe3df4.json",
+					"name" : "mt_and_fm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_fm::@59526f5107e210a4e323",
+					"jsonFile" : "target-test_fm-Debug-a49cf7fbec767fb800c9.json",
+					"name" : "test_fm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_mt::@edf3d43471b0a354324b",
+					"jsonFile" : "target-test_mt-Debug-99b5e6b546d19e73d76e.json",
+					"name" : "test_mt",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/hewo/CLionProjects/mt_and_fm/cmake-build-debug",
+		"source" : "/Users/hewo/CLionProjects/mt_and_fm"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
